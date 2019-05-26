@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+mat-card {
+  position: absolute;
+  top: 30%;
+  left: 50%; transform: translate(-50%, 0);
+  max-width: 500px;
+}

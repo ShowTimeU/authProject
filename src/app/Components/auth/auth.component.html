@@ -1,0 +1,26 @@
+
+<div class="container">
+<mat-card>
+  <form [formGroup]="authFG">
+
+  <mat-form-field>
+    <mat-label> Login </mat-label>
+    <input matInput
+           [formControl]="loginFC"
+           placeholder="input login"
+           required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label> Password </mat-label>
+    <input matInput
+           [formControl]="passFC"
+           placeholder="input password"
+           required>
+  </mat-form-field><br>
+
+  <button mat-raised-button [disabled]="!authFG.valid" (click)="authSubmit()" type="submit" color="primary"> Login </button>
+
+  </form>
+</mat-card>
+</div>
